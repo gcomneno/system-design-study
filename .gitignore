@@ -1,0 +1,31 @@
+# Video files: intentionally excluded
+*.mp4
+*.mkv
+*.webm
+*.mov
+*.avi
+*.flv
+*.wmv
+*.m4v
+*.ts
+
+# Download/temp artifacts
+*.part
+*.tmp
+*.temp
+downloads/
+videos/
+raw-videos/
+
+# Python/cache/editor noise
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.vscode/
+.idea/
+
+# OS noise
+.DS_Store
+Thumbs.db

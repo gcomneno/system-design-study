@@ -48,3 +48,8 @@ Regola importante
 I file video sono esclusi deliberatamente dal repository.
 
 Per eventuale pubblicazione pubblica, evitare transcript completi o traduzioni integrali di materiale non proprio, salvo licenza o autorizzazione compatibile.
+
+## Study Sessions
+
+- [Session 01 – API Design](sessions/session-01-api-design/)
+

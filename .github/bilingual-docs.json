@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "canonical_language": "en",
+  "translation_language": "it",
+  "translation_suffix": ".it.md",
+  "canonical_documents": [
+    "CONTRIBUTING.md",
+    "README.md"
+  ],
+  "legacy_unpaired_documents": [
+    "CHANGELOG.md",
+    "CODE_OF_CONDUCT.md",
+    "NOTICE.md",
+    "SECURITY.md",
+    "archive/README.md",
+    "docs/REPO-HYGIENE.md",
+    "sessions/README.md",
+    "sessions/session-01-api-design/README.md",
+    "sessions/session-01-api-design/auto-test/quizzer-responses.md",
+    "sessions/session-01-api-design/auto-test/quizzer.md",
+    "sessions/session-01-api-design/interview-answers.md",
+    "sessions/session-01-api-design/lessons-learned.md",
+    "sessions/session-01-api-design/translations/README.md"
+  ],
+  "excluded_documents": [],
+  "ignored_directories": [
+    ".git",
+    ".venv",
+    "node_modules",
+    "vendor"
+  ]
+}

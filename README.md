@@ -1,55 +1,106 @@
 # System Design Study
 
-Repository didattico per lo studio di System Design usando transcript auto-generati come base di lavoro.
+[English](README.md) | [Italiano](README.it.md)
 
-## Obiettivo
+A public learning repository for studying System Design through original notes,
+summaries, quizzes, interview answers, exercises, and small supporting tools.
 
-Trasformare transcript e appunti grezzi in materiale di studio utilizzabile:
+Raw transcripts and privately sourced material may be used locally as input, but
+the public repository contains only reviewed and reworked learning artifacts.
 
-1. reflow del transcript;
-2. sintesi;
-3. concetti chiave;
-4. trade-off;
-5. quiz;
-6. domande da colloquio;
-7. risposte corrette e correzioni ragionate.
+## Goal
 
-## Metodo di studio
+Turn raw notes and study inputs into reusable material:
 
-Si lavora solo sul testo.
+1. reorganized source notes;
+2. concise synthesis;
+3. key concepts;
+4. architectural trade-offs;
+5. quizzes;
+6. interview questions;
+7. reasoned answers and corrections.
 
-## Struttura
+## Study method
+
+The workflow is text-first.
+
+Each topic should produce practical and reviewable artifacts rather than a copy
+of the original source material. Public content should emphasize engineering
+reasoning, concrete examples, failure modes, and interview-ready explanations.
+
+## Repository structure
 
 ```text
 system-design-study/
+├── .github/
+│   ├── bilingual-docs.json
+│   └── workflows/
+│       └── bilingual-docs.yml
 ├── archive/
 ├── docs/
 ├── scripts/
-└── sessions/
+│   ├── check-bilingual-docs.py
+│   ├── check-no-videos.sh
+│   └── check-public-content.sh
+├── sessions/
+├── tests/
+│   └── test_bilingual_docs.py
+├── CONTRIBUTING.md
+├── CONTRIBUTING.it.md
+├── README.md
+└── README.it.md
 ```
 
-Directory
-archive/: materiale testuale grezzo o importato.
-sessions/: materiale didattico lavorato, organizzato per sessione.
-docs/: regole e convenzioni del repository.
-scripts/: controlli e utility.
+- `archive/`: notes about private or local source material.
+- `sessions/`: processed learning material organized by study session.
+- `docs/`: repository policies and maintenance conventions.
+- `scripts/`: validation and repository hygiene tools.
 
-Sessioni
-Sessione 01 – API Design
+## Documentation languages
 
-Materiale corrente:
-API come contratto, astrazione e confine tra servizi;
-REST, GraphQL e gRPC;
-principi di design: consistency, simplicity, security, performance;
-quiz a scelta multipla;
-risposte corrette e correzione ragionata.
-Regola importante
+English is the canonical documentation language.
 
-I file video sono esclusi deliberatamente dal repository.
+Italian counterparts use the `.it.md` suffix. Bilingual pairs and the measurable
+legacy backlog are registered in `.github/bilingual-docs.json`.
 
-Per eventuale pubblicazione pubblica, evitare transcript completi o traduzioni integrali di materiale non proprio, salvo licenza o autorizzazione compatibile.
+Contributions must follow [CONTRIBUTING.md](CONTRIBUTING.md).
 
-## Study Sessions
+## Current study track
 
-- [Session 01 – API Design](sessions/session-01-api-design/)
+The current track is API Design.
 
+Available material covers:
+
+- APIs as contracts, abstractions, and service boundaries;
+- REST, GraphQL, and gRPC;
+- consistency, simplicity, security, and performance;
+- quizzes and reasoned corrections;
+- interview questions and answers.
+
+See [Study Sessions](sessions/README.md).
+
+## Publication and copyright policy
+
+Video files are deliberately excluded.
+
+Do not publish complete transcripts, complete translations, downloaded course
+material, private notes, or source-derived corpora without explicit permission
+or a compatible license.
+
+The preferred public artifacts are original summaries, lessons learned, quizzes,
+exercises, diagrams, and interview answers.
+
+## Local validation
+
+Run the repository hygiene and bilingual documentation checks before publishing
+changes:
+
+```bash
+./scripts/check-no-videos.sh
+./scripts/check-public-content.sh
+python3 -m unittest discover -s tests -p "test_bilingual_docs.py" -v
+python3 scripts/check-bilingual-docs.py
+```
+
+The bilingual foundation is tracked by
+[issue #1](https://github.com/gcomneno/system-design-study/issues/1).

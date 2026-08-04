@@ -1,0 +1,52 @@
+name: Bilingual documentation
+
+on:
+  pull_request:
+    paths:
+      - "**/*.md"
+      - ".gitignore"
+      - ".github/bilingual-docs.json"
+      - ".github/workflows/bilingual-docs.yml"
+      - "scripts/check-bilingual-docs.py"
+      - "tests/test_bilingual_docs.py"
+  push:
+    branches:
+      - main
+    paths:
+      - "**/*.md"
+      - ".gitignore"
+      - ".github/bilingual-docs.json"
+      - ".github/workflows/bilingual-docs.yml"
+      - "scripts/check-bilingual-docs.py"
+      - "tests/test_bilingual_docs.py"
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    name: Validate document pairs
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Test bilingual validator
+        env:
+          PYTHONDONTWRITEBYTECODE: "1"
+        run: >-
+          python3 -m unittest discover
+          -s tests
+          -p "test_bilingual_docs.py"
+          -v
+
+      - name: Validate bilingual documentation
+        env:
+          PYTHONDONTWRITEBYTECODE: "1"
+        run: python3 scripts/check-bilingual-docs.py

@@ -29,3 +29,7 @@ __pycache__/
 # OS noise
 .DS_Store
 Thumbs.db
+
+# Python environments and compiled variants
+*.py[cod]
+.venv/

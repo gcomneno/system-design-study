@@ -4,7 +4,10 @@ set -euo pipefail
 echo "Checking potentially risky public-content files..."
 
 found="$(
-  find . -path './.git' -prune -o -type f \( \
+  find . \
+    -path './.git' -prune -o \
+    -path './sources/private' -prune -o \
+    -type f \( \
     -path './archive/*.txt' -o \
     -iname '*transcript*' -o \
     -iname '*corpus*' -o \

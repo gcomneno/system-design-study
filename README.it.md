@@ -45,6 +45,8 @@ system-design-study/
 │   ├── check-bilingual-docs.py
 │   ├── check-no-videos.sh
 │   └── check-public-content.sh
+├── sources/
+│   └── private/              # local private SOT
 ├── sessions/
 ├── tests/
 │   └── test_bilingual_docs.py
@@ -55,6 +57,7 @@ system-design-study/
 ```
 
 - `archive/`: note relative a materiale sorgente privato o locale.
+- `sources/private/`: source of truth (SOT) locale per gli input di studio grezzi; è deliberatamente ignorata da Git e non deve mai essere pubblicata.
 - `sessions/`: materiale didattico rielaborato e organizzato per sessione.
 - `docs/`: politiche del repository e convenzioni di manutenzione.
 - `scripts/`: strumenti di validazione e igiene del repository.
@@ -92,6 +95,11 @@ licenza compatibile.
 
 I materiali pubblici preferiti sono sintesi originali, lezioni apprese, quiz,
 esercizi, diagrammi e risposte da colloquio.
+
+Transcript grezzi, traduzioni private, output GYTE e altro materiale sorgente
+possono vivere localmente sotto `sources/private/`. Questa directory costituisce
+la SOT privata dello studio, è esclusa dal versionamento ed è intenzionalmente
+ignorata dai controlli sul contenuto pubblico.
 
 ## Validazione locale
 

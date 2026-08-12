@@ -16,6 +16,7 @@
     "docs/REPO-HYGIENE.md",
     "sessions/README.md",
     "sessions/session-01-api-design/README.md",
+    "sessions/session-01-api-design/auto-test/quizzer-02-http-api-design.md",
     "sessions/session-01-api-design/auto-test/quizzer-responses.md",
     "sessions/session-01-api-design/auto-test/quizzer.md",
     "sessions/session-01-api-design/interview-answers.md",
@@ -27,6 +28,7 @@
     ".git",
     ".venv",
     "node_modules",
+    "sources/private",
     "vendor"
   ]
 }

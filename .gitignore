@@ -33,3 +33,6 @@ Thumbs.db
 # Python environments and compiled variants
 *.py[cod]
 .venv/
+
+# Private local study sources — never publish
+sources/private/

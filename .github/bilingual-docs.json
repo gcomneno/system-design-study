@@ -5,7 +5,20 @@
   "translation_suffix": ".it.md",
   "canonical_documents": [
     "CONTRIBUTING.md",
-    "README.md"
+    "README.md",
+    "sessions/session-01-api-design/interview-answers.md",
+    "sessions/session-01-api-design/study-map.md",
+    "sessions/session-01-api-design/units/02-protocol-selection.md",
+    "sessions/session-01-api-design/units/03-http-https.md",
+    "sessions/session-01-api-design/units/04-websocket-amqp-grpc.md",
+    "sessions/session-01-api-design/units/05-tcp-vs-udp.md",
+    "sessions/session-01-api-design/units/06-rest-resource-design.md",
+    "sessions/session-01-api-design/units/07-http-semantics-errors.md",
+    "sessions/session-01-api-design/units/08-querying-api-evolution.md",
+    "sessions/session-01-api-design/units/09-graphql.md",
+    "sessions/session-01-api-design/units/10-authentication.md",
+    "sessions/session-01-api-design/units/11-authorization.md",
+    "sessions/session-01-api-design/units/12-api-security.md"
   ],
   "legacy_unpaired_documents": [
     "CHANGELOG.md",
@@ -16,10 +29,14 @@
     "docs/REPO-HYGIENE.md",
     "sessions/README.md",
     "sessions/session-01-api-design/README.md",
+    "sessions/session-01-api-design/auto-test/quizzer-02-http-api-design-responses.md",
     "sessions/session-01-api-design/auto-test/quizzer-02-http-api-design.md",
+    "sessions/session-01-api-design/auto-test/quizzer-03-protocols-transport-rest-responses.md",
+    "sessions/session-01-api-design/auto-test/quizzer-03-protocols-transport-rest.md",
+    "sessions/session-01-api-design/auto-test/quizzer-04-graphql-identity-security-responses.md",
+    "sessions/session-01-api-design/auto-test/quizzer-04-graphql-identity-security.md",
     "sessions/session-01-api-design/auto-test/quizzer-responses.md",
     "sessions/session-01-api-design/auto-test/quizzer.md",
-    "sessions/session-01-api-design/interview-answers.md",
     "sessions/session-01-api-design/lessons-learned.md",
     "sessions/session-01-api-design/translations/README.md"
   ],
